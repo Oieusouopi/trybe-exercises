@@ -52,3 +52,23 @@ if (bebida === 'cafézinho' && comida === 'pão na chapa') {
 } else {
   console.log('Acho que houve um engano com meu pedido');
 }
+const conditionOne = true;
+const conditionTwo = true;
+
+console.log(conditionOne && conditionTwo);
+
+const currentHour = 22;
+let message = null ;
+if (currentHour >= 22) {
+    message ="Nao deveriamos comer nada,é hora de dormir"
+}
+else if(currentHour >= 18 && currentHour < 22) {
+    message = "Rango da noite,vamos jantar :D";
+}
+else if (currentHour > 11 && currentHour < 14) {
+    message = "Hora do almoço!!!";
+}
+else {
+    message = "hmm,cheiro de café recém passado";
+}
+    console.log(message) ;
