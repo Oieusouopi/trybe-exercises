@@ -72,3 +72,15 @@ else {
     message = "hmm,cheiro de café recém passado";
 }
     console.log(message) ;
+
+//Operador OR
+const bebidaPrincipal =  'cafezinho';
+const bebidaAlternativa = 'suco de laranja';
+
+if (bebidaPrincipal === 'cafezinho' || bebidaAlternativa === 'suco de laranja') {
+  console.log("Obrigado por me atender :D")
+} else {
+  console.log("Ei, eu não pedi isso!");
+}
+//operador NOT
+console.log(!(2 + 2) === 4);    
