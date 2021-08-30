@@ -5,6 +5,6 @@ function numbers (array){
             indiceMaior = index;
         }
     }
-    return indiceMaior
+    return indiceMaior;
 }
 console.log(numbers([2, 3, 6, 7, 10, 1]));
