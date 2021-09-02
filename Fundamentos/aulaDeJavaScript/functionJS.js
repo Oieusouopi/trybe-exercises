@@ -32,4 +32,4 @@ function numbers(array){
 }
 return indiceMenor;
 }
-console.log(numbers[2, 4, 6, 7, 10, 0, -3]);
+console.log(numbers([2, 4, 6, 7, 10, 0, -3]));
