@@ -35,15 +35,25 @@ const order = {
   };
   
   const customerInfo = (order) => {
-    // Adicione abaixo as informações necessárias.
-  
+    const deliveryPerson = order.order["delivery"].deliveryPerson; //Ana silveira
+    const phoneNumber = order["phoneNumber"]; //Telefone
+    const name = order["name"]; //Rafaela
+    const number = order["address"].number; // 389
+    const street = order["address"].street;  //Rua das Flores
+    const apto = order["address"].apartment; //701
+    console.log("Olá"+" "+deliveryPerson+", "+"entrega para:"+ " "+ name + "," + "Telefone:" + " " + phoneNumber + ", R. " + street +", Nº: "+number+ ", AP: "+ apto)
+    //"Olá Ana Silveira, entrega para: Rafael Andrade, Telefone: 11-98763-1416, R. Rua das Flores, Nº: 389, AP: 701
   }
   
   customerInfo(order);
   
   const orderModifier = (order) => {
-    // Adicione abaixo as informações necessárias.
-  
+  const name = order.name = "Luiz Silva"
+  const pizza = Object.keys(order.order.pizza);
+  const payment = order.order.payment = 50;
+  const drink = order.order.drinks.coke.type;
+  console.log("Olá " + name + ", o total do seu pedido de " + pizza[0] + ", " + pizza[1] + " e " + drink + "é R$" + payment + ",00.");
+  //"Olá Luiz Silva, o total do seu pedido de marguerita, pepperoni e Coca-Cola Zero é R$ 50,00.
   }
   
   orderModifier(order);
